@@ -1,0 +1,88 @@
+@import '~theme/theme.scss';
+
+@mixin money {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.step-form {
+  margin: 40px auto 0;
+  max-width: 500px;
+  .el-form-item {
+    &__content {
+      width: 80%;
+      .el-input__prefix {
+        left: 10px;
+      }
+    }
+    &__label {
+      margin-bottom: 0;
+      &::after {
+        content: ':';
+        margin: 0 0 0 2px;
+        position: relative;
+        top: -0.5px;
+      }
+    }
+  }
+
+  .money {
+    @include money;
+  }
+
+  .uppercase {
+    font-size: 12px;
+  }
+}
+
+.step-desc {
+  padding: 0 56px;
+  color: $text-color-secondary;
+  h3 {
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    color: $text-color-secondary;
+    line-height: 32px;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    color: $text-color-secondary;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 22px;
+  }
+}
+
+.step-result {
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 24px 0 8px;
+
+  .money {
+    @include money;
+  }
+}
+
+.step-information {
+  line-height: 22px;
+  .el-row:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .label {
+    color: $heading-color;
+    text-align: right;
+    padding-right: 8px;
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .step-desc {
+    padding: 0;
+  }
+}
