@@ -5,7 +5,7 @@
         <div class="header">
           <router-link to="/">
             <img alt="logo" class="logo" :src="logo"/>
-            <span class="title">公园之友</span>
+            <span class="title">XXX</span>
           </router-link>
         </div>
         <div class="desc">后台管理系统</div>

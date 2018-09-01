@@ -235,7 +235,7 @@ export default Vue.extend({
                     src: logo
                   }
                 }),
-                h('h1', '公园之友管理系统')
+                h('h1', 'XXX管理系统')
               ]
             )
           ]
